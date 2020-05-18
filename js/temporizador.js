@@ -70,6 +70,8 @@ function cro(){
         min--
         s=60
     }
+        
+        s--
 
     if(h==="" && min===""){
         h=0;
@@ -106,7 +108,6 @@ function cro(){
         else{
             res.innerHTML = h+":"+min+":"+s;
         }
-        s--
     }
 }
 setInterval(cro,1000);
