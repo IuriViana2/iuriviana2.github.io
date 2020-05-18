@@ -72,6 +72,9 @@ function cro(){
     }
         
         s--
+        if(s==-1){
+        s=0;
+        }
 
     if(h==="" && min===""){
         h=0;
