@@ -245,6 +245,21 @@ input{
     appearance: textfield;
 }
 
+@media(max-width: 550px){
+    span{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    
+    .TextForm{
+        margin-top: 30px;
+        width: 110px;
+        border: solid 1px black;
+        font-size: 18px;
+        font-family: 'Orbitron';
+        color: rgb(0, 0, 0);
+    }
+}
 
 
 
