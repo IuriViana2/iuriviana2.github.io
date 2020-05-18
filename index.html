@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Iuri Pereira Viana">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="Image/x-icon" href="img/Sla.svg">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+    <title>Cronômetro Online</title>
+
+</head>
+
+<body>
+    <div id="Tudo">
+
+    
+        <header>
+            <input type="checkbox" id="Menu">
+            <label for="Menu">&#9776;</label>
+            <p>Cronômetro Online</p>
+            <div class="bg"></div>
+
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Cronômetro</a></li>
+                    <hr>
+                    <li class="temp"><a href="temporizador.html">Temporizador</a></li>
+                    <hr>
+                    <li class="temp"><a href="">Testes</a></li>
+                    <hr>
+                </ul>
+            </div>
+
+        </header>
+
+        <section>
+
+             <p id="Text">00:00:00</p>
+
+            <form>
+             <input class="button" type="button" id="Iniciar" onclick="clicar()" value="iniciar">
+             <input class="button" type="button" id="Zerar"  value="zerar" onclick="Zero()">
+            </form>
+            <pre>
+
+
+            </pre>
+            
+        </section>
+        
+
+    </div>
+    <footer>
+
+        <div class="TextFooter">
+
+            <p>Site feito com o objetivo de revisar alguns conceitos de JS</p>
+            <p>&copy Iuri Pereira Viana</p>
+            <img src="img/Discord.png" class="Discord">
+            <p class="Tag" id="copiar">Mashairos#9296</p>
+
+
+        </div>
+
+    </footer>
+    <script src="js/js.js"></script>
+</body>
+
+</html>

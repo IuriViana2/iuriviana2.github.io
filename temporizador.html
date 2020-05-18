@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Iuri Pereira Viana">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="Image/x-icon" href="img/Sla.svg">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+    <title>Cronômetro Online</title>
+
+</head>
+
+<body>
+    <div id="Tudo">
+
+
+        <header>
+            <input type="checkbox" id="Menu">
+            <label for="Menu">&#9776;</label>
+            <p>Cronômetro Online</p>
+            <div class="bg"></div>
+
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Cronômetro</a></li>
+                    <hr>
+                    <li class="temp"><a href="temporizador.html">Temporizador</a></li>
+                    <hr>
+                    <li class="temp"><a href="">Testes</a></li>
+                    <hr>
+                </ul>
+            </div>
+
+        </header>
+
+        <section>
+
+            <p id="Text">00:00:00</p>
+            
+            <form>
+                <input  id="definir" class="button" type="button" value="Definir">
+                <input  id="zerar" class="button" type="button" value="Zerar">
+            </form>
+            <div class="Cent">
+            <form class="Dados" id="dados">
+                <table>
+                    <tr>
+                        <td>
+                            <input placeholder="Horas" class="TextForm" id="Hora" type="number">
+                            <span>:</span>
+                        </td>
+                        <td>
+                            <input placeholder="Minutos" class="TextForm" id="Min" type="number">
+                            <span>:</span>
+                        </td>
+                        <td>
+                            <input placeholder="Segundos" class="TextForm" id="Secon" type="number">
+                        </td>
+                    </tr>
+                </table>
+                </form>
+            </div>
+    
+            <pre>
+
+
+
+            </pre>
+
+        </section>
+
+
+    </div>
+    <footer>
+
+        <div class="TextFooter">
+
+            <p>Site feito com o objetivo de revisar alguns conceitos de JS</p>
+            <p>&copy Iuri Pereira Viana</p>
+            <img src="img/Discord.png" class="Discord">
+            <p class="Tag" id="copiar">Mashairos#9296</p>
+
+
+        </div>
+
+    </footer>
+    <script src="js/temporizador.js"></script>
+</body>
+</html>

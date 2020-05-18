@@ -1,0 +1,255 @@
+/*Importando fonte - Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+/*Seletor universal*/
+*{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+/*Tirando margens, definindo fundo, fixando footer no final da página*/
+body,html{
+    margin: 0px;
+    bottom: 0px;
+    height: 100%;
+}
+body{
+    background-color: rgb(105, 104, 104);
+}
+
+#Tudo{
+    min-height: 100%;
+}
+/*Estilo de rodapé*/
+
+footer{
+    padding: 5px;
+    margin-top: 50px;
+    background-color: rgb(37, 37, 37);
+    box-shadow: 0px -7px rgb(75, 72, 72);
+    position: relative;
+}
+
+.TextFooter{
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.Tag{
+    display: inline-block;
+    margin-left: 35px;
+    position: relative;
+    margin-top: 8px;
+}
+
+.Discord{
+    width: 30px;
+    position: absolute;
+}
+
+/*Header*/
+
+
+header{
+    top: 0px;
+    background-color: rgb(37, 37, 37);
+    box-shadow: 0px 7px rgb(75, 72, 72);
+    
+}
+
+header p{
+    display: inline-block;
+    float: inline-end;
+    font-size: 35px;
+    margin: 15px 15px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+/*Menu lateral*/
+
+label{
+   cursor: pointer;
+   color: rgb(255, 255, 255);
+   font-size: 50px;
+   height: 100%;
+}
+
+#Menu{
+    display: none;
+}
+.nav{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -20%;
+    height: 100%;
+    background-color: rgb(37, 37, 37);
+    padding: 5px;
+    transition: all linear .3s .01s;
+}
+
+.nav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.nav li{
+    list-style: none;
+    box-sizing: content-box;
+    margin-right: 40px;
+    margin-bottom: 30px;
+}
+
+hr{
+    margin-left: -35px;
+}
+
+.temp{
+    margin-top: 25px;
+}
+
+.nav ul{
+    margin-left: -30px;
+}
+
+#Menu:checked ~ .nav{
+    margin-left: 0px;
+}
+
+#Menu:checked ~ label{
+    color: rgb(40, 150, 150);
+}
+
+
+/*Sessão de conteúdo*/
+
+section{
+    box-shadow: 0px -60px  rgb(189, 184, 184) ;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 100%;
+    background-color: rgb(189, 184, 184);
+}
+
+#Text{
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: black;
+    padding: 100px;
+    margin-top: 100px;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-size: 55px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    padding: 15px;
+    margin-right: 20px;
+    background-color: cadetblue;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.button:hover{
+    transition: all .2s;
+    background-color: rgb(68, 117, 119);
+}
+
+/*Impedindo que clique em algo fora da tela*/
+
+.bg{
+    top: 70px;
+    width: 100%;
+    height: 101.5%;
+    background-color: rgb(41, 40, 40);
+    opacity: 0.6;
+    position: absolute;
+    visibility: hidden;
+    transition-delay: 0.1s;
+}
+
+#Menu:checked ~ .bg{
+    visibility: visible;
+}
+
+
+
+@media(max-width: 845px){
+    .nav{
+        position: absolute;
+        margin-top: 5px;
+        margin-left: -40%;
+        height: 100%;
+        background-color: rgb(37, 37, 37);
+        padding: 5px;
+        transition: all linear .25s .01s;
+    }
+    
+}
+
+@media(max-width: 550px){
+    
+    #Text{
+        margin-left: 15px;
+        margin-right: 15px;
+        background-color: black;
+        padding: 80px;
+        margin-top: 100px;
+        font-family: 'Orbitron', sans-serif;
+        color: white;
+        font-size: 45px;
+        text-align: center;
+    }
+
+
+}
+
+.Cent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Dados{
+    display: none;
+}
+
+span{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.TextForm{
+    margin-top: 30px;
+    width: 150px;
+    border: solid 1px black;
+    font-size: 18px;
+    font-family: 'Orbitron';
+    color: rgb(0, 0, 0);
+}
+
+input{
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+
+
+
+
+
+
+
+
